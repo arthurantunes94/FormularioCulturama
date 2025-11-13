@@ -60,7 +60,7 @@
                     <br>
 
                     <label for="userEstado">Estado:</label>
-                    <select name="userEstado">
+                    <select name="userEstado" required>
                         <option value="Sao Paulo">São Paulo</option>
                         <option value="Rio de Janeiro">Rio de Janeiro</option>
                         <option value="Minas Gerais">Minas Gerais</option>
@@ -72,6 +72,40 @@
                     <label for="userCity">Cidade:</label>
                     <input type="text" name="userCity" placeholder="Escreva a sua cidade">
                     <br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Hábitos</legend>
+
+                    <p>Redes Socias:</p>
+
+                    <input type="checkbox" name="userSocials" id="instagram" value="instagram">
+                    <label for="instagram">Instagram</label>
+                    <br>
+
+                    <input type="checkbox" name="userSocials" id="facebook" value="facebook">
+                    <label for="facebook">Facebook</label>
+                    <br>
+
+                    <input type="checkbox" name="userSocials" id="twiter" value="twiter">
+                    <label for="twiter">Twitter</label>
+                    <br>
+
+                    <input type="checkbox" name="userSocials" id="linkedin" value="linkedin">
+                    <label for="linkedin">LinkedIn</label>
+                    <br>
+
+                    <label for="musicStyle">Estilo Musical:</label>
+                    <input list="styles" type="text" name="userMusicStyle" id="musicaStyle">
+                    <datalist id="styles">
+                        <option value="Rock">
+                        <option value="Samba">
+                        <option value="Sertanejo">
+                    </datalist>
+                    <br>
+                    
+                    <label for="favoriteColor">Cor favorita:</label>
+                    <input type="color" name="userColorFavorite" id="favoriteColor">
                 </fieldset>
                 <button type="submit">Enviar</button>
             </form>
