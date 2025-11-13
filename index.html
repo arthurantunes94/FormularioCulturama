@@ -10,8 +10,8 @@
     <header>
         <h1>Pesquisa Online</h1>
         <section class="formulario">
-            <form action="" method="get" class="formulario-dados-pessoais">
-                <fieldset>
+             <form action="" method="get" class="formulario-dados-pessoais">
+               <fieldset>
                     <legend>Dados Pessoais</legend>
 
                     <label for="userName">Nome:</label>
@@ -107,8 +107,33 @@
                     <label for="favoriteColor">Cor favorita:</label>
                     <input type="color" name="userColorFavorite" id="favoriteColor">
                 </fieldset>
+
+                <fieldset>
+                    <legend>Opinião</legend>
+                    
+                    <p>Satisfição:</p>
+                    <input type="radio" name="useSatisfacao" id="otima" value="otima">
+                    <label for="otima">Ótima</label>
+                    <br>
+
+                    <input type="radio" name="useSatisfacao" id="boa" value="boa">
+                    <label for="boa">Boa</label>
+                    <br>
+
+                    <input type="radio" name="useSatisfacao" id="regular" value="regular">
+                    <label for="regular">Regular</label>
+                    <br>
+
+                    <input type="radio" name="useSatisfacao" id="ruim" value="ruim">
+                    <label for="ruim">Ruim</label>
+                    <br>
+
+                    <label for="comentario">Comentário:</label>
+                    <textarea name="useComentario" id="comentario"></textarea>
+
+                </fieldset>
                 <button type="submit">Enviar</button>
-            </form>
+            </form> 
         </section>
     </header>    
 </body>
