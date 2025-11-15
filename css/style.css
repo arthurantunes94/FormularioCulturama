@@ -71,8 +71,30 @@ button:hover{
     background-color: #b6b5b5;
 }
 
-input, select, textarea{
-    border-radius: 5px;
+label{
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
+input, select, textarea{
+    border-radius: 5px;
+    width: 100%;
+    border: 2px solid #cccccc;
+}
+
+textarea{
+    min-height: 100px;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    width: auto;
+}
+
+input:invalid{
+    border-color: red;
+}
+
+.principal-msgEnvioSucesso{
+    margin-top: 20px;
+}
 
